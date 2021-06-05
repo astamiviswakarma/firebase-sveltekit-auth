@@ -1,4 +1,4 @@
-# Firebase Auth + SvelteKit + Tailwind
+# Firebase Auth + SvelteKit + Tailwind + Hasura
 
 You will need to configure your firebase using `src/lib/config/firebase-adminsdk.json.sample` and `src/lib/config/firebase-appsdk.json.sample`.
 
