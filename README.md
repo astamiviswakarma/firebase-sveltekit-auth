@@ -1,3 +1,7 @@
+# Firebase Auth + SvelteKit + Tailwind
+
+You will need to configure your firebase using `src/lib/config/firebase-adminsdk.json.sample` and `src/lib/config/firebase-appsdk.json.sample`.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
