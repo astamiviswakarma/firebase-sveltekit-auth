@@ -1,6 +1,6 @@
 import type { Request, Response } from '@sveltejs/kit';
 import * as cookie from 'cookie';
-import { auth } from '$lib/firebaseAdmin';
+import { authAdmin } from '$lib/firebaseAdmin';
 
 export async function post(request: Request): Promise<Response> {
 	const body = request.body;
@@ -13,7 +13,7 @@ export async function post(request: Request): Promise<Response> {
 
 	try {
 		const sessionCookie = await new Promise<string>((resolve, reject) =>
-			auth.createSessionCookie(idToken, { expiresIn }).then(resolve, reject)
+			authAdmin.createSessionCookie(idToken, { expiresIn }).then(resolve, reject)
 		);
 
 		return {
