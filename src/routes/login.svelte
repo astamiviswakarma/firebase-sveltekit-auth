@@ -15,7 +15,7 @@
             },
             body: JSON.stringify({ idToken })
         });
-        session.set({ user: { uid: credential.user.uid } });
+        session.set({ user: { uid: credential.user.uid }, token: idToken });
         goto('/dashboard', {replaceState: true});
     }
 </script>
