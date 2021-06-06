@@ -15,6 +15,7 @@
 
 <script lang=ts>
 	import { operationStore, query } from '@urql/svelte';
+	import { onMount } from 'svelte';
 
 	const todo = operationStore(
 	`
@@ -30,6 +31,10 @@
 	}`);
 
 	query(todo);
+
+	onMount(async () => {
+		$todo.context = { requestPolicy: 'cache-and-network' }; // can set it network-only for no cache.
+	});
 
 </script>
 
