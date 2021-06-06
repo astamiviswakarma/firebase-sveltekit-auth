@@ -16,19 +16,9 @@
 <script lang=ts>
 	import { operationStore, query } from '@urql/svelte';
 	import { onMount } from 'svelte';
+    import {todoQuery} from '$lib/schema';
 
-	const todo = operationStore(
-	`
-	query {
-		clinics {
-			id
-			is_active
-			last_modified
-			latitude
-			longitude
-			name
-		}
-	}`);
+	const todo = operationStore(todoQuery);
 
 	query(todo);
 
