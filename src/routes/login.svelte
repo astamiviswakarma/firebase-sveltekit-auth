@@ -20,4 +20,16 @@
     }
 </script>
 
+
+<button class="mdc-icon-button" on:click={signIn}
+   aria-label="Add to favorites"
+   aria-pressed="false"
+   data-mdc-auto-init="MDCIconButtonToggle">
+  <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">login</i>
+  <i class="material-icons mdc-icon-button__icon">login_border</i>
+</button>
+
+<br/>
+<br/>
+
 <button on:click={signIn}>Login with Google</button>

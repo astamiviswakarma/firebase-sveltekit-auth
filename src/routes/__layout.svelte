@@ -2,7 +2,12 @@
   import { auth } from '$lib/firebase';
   import { session } from '$app/stores';
   import { initClient } from '@urql/svelte';
+  import * as mdc from 'material-components-web';
+  import { onMount } from 'svelte';
 
+  onMount(() => {
+    mdc.autoInit();
+  });
 
   async function signOut() {
     await auth.signOut();
@@ -48,6 +53,8 @@
 </main>
 
 <style global lang="postcss">
+  @import 'material-components-web/dist/material-components-web';
+  @import 'material-icons/iconfont/material-icons.css';
   @tailwind base;
   @tailwind components;
   @tailwind utilities;

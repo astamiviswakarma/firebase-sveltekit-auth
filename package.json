@@ -24,6 +24,8 @@
     "eslint-plugin-svelte3": "^3.2.0",
     "firebase": "^8.6.4",
     "firebase-admin": "^9.9.0",
+    "material-components-web": "^11.0.0",
+    "material-icons": "^0.7.2",
     "postcss": "^8.3.0",
     "postcss-load-config": "^3.0.1",
     "postcss-nested": "^5.0.5",
