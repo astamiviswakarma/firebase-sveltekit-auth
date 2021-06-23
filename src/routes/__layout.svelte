@@ -51,8 +51,8 @@
     </section>
   </div>
 </header>
-
-<nav class="pt-16">
+<main class="mdc-top-app-bar--fixed-adjust">
+<nav>
   <a href="/">Home</a> |
   {#if $session && !$session.user}
   <a href="/login">Login</a>
@@ -61,8 +61,6 @@
   <button on:click={() => signOut()}>Logout</button>
   {/if}
 </nav>
-
-<main>
   <slot />
 </main>
 
