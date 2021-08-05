@@ -32,4 +32,7 @@
 <br/>
 <br/>
 
+<button class="mdc-button mdc-button--raised" on:click={signIn}>  <span class="mdc-button__ripple"></span> Learn More</button>
+
+
 <button on:click={signIn}>Login with Google</button>
